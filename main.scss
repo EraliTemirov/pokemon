@@ -1,0 +1,60 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(233, 233, 36);
+}
+h1{
+  font-family: Nosifer;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 2rem;
+}
+.container{
+  margin: 0 auto;
+  width: 1360px;
+}
+
+.grid{
+  margin-top: 5px;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 400px);
+  grid-template-rows: repeat(51, 500px);
+  grid-gap: 15px;
+  justify-content: center;
+  align-content: center;
+  .cards{
+    background-color: rgb(65, 246, 65);
+    border: 1px solid green;
+    border-radius: 5%;
+  }
+
+  img{
+    margin-left: 80px;
+    width: 200px;
+  }
+  p{font-family: Nosifer;
+    text-align: center;
+    font-size: 18px;
+    padding: 1px;
+    width: 340px;
+  }
+  h2{
+    font-family: Nosifer;
+    text-align: center;
+  }
+  .id{
+    margin-top: 2rem;
+    font-size: 35px;
+  }
+}
+li{
+  list-style: none;
+}
