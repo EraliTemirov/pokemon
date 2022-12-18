@@ -3475,14 +3475,11 @@ var pokemons = [
   },
 ];
 
-
 let card = document.querySelector(".grid");
-
 pokemons.forEach((grid) => {
-
-  
   let divcard = document.createElement("div");
   divcard.classList.add("cards");
+  divcard.style.padding="6px";
   let h2 = document.createElement("h2");
   let id = document.createElement("p");
   id.classList.add("id");
@@ -3491,15 +3488,16 @@ pokemons.forEach((grid) => {
   height.classList.add("height");
   let weight = document.createElement("p");
   weight.classList.add("weight");
-  let img =document.createElement("img");
+  let img = document.createElement("img");
+  img.style.width="250px";
   h2.textContent = grid.name;
   id.textContent = grid.id;
-  img.src=grid.img;
-  height.textContent=grid.height;
-  weight.textContent=grid.weight;
-  weaknesses.textContent=grid.weaknesses;
+  img.src = grid.img;
+  height.textContent = grid.height;
+  weight.textContent = grid.weight;
+  weaknesses.textContent = grid.weaknesses;
 
-  divcard.append(img, id, h2, height, weight,weaknesses);
+  divcard.append(img, id, h2, height, weight, weaknesses);
 
   card.appendChild(divcard);
 });
