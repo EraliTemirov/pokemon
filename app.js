@@ -3496,6 +3496,7 @@ pokemons.forEach((grid) => {
   height.textContent = grid.height;
   weight.textContent = grid.weight;
   weaknesses.textContent = grid.weaknesses;
+  weaknesses.classList.add("oxirgi");
 
   divcard.append(img, id, h2, height, weight, weaknesses);
 
